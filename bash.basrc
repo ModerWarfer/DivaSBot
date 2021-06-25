@@ -445,15 +445,6 @@ echo -e "\033[1;32m
 \033[0m"
 echo -e "\033[1;36m
 
-			░██████╗░█████╗░███╗░░░███╗██╗░░░██╗██████╗░██████╗░░█████╗░
-			██╔════╝██╔══██╗████╗░████║██║░░░██║╚════██╗╚════██╗██╔══██╗
-			╚█████╗░███████║██╔████╔██║██║░░░██║░█████╔╝░█████╔╝██║░░██║
-			░╚═══██╗██╔══██║██║╚██╔╝██║██║░░░██║░╚═══██╗░╚═══██╗██║░░██║
-			██████╔╝██║░░██║██║░╚═╝░██║╚██████╔╝██████╔╝██████╔╝╚█████╔╝
-			╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝░╚═════╝░╚═════╝░╚═════╝░░╚════╝░
-
-
-
 
 
 \033[0m"
@@ -479,8 +470,8 @@ echo -e '\033[0m\033[1;32m
 echo -e
 cd $HOME
 termimage Samu.png
-toilet -f smmono12 -f pagga -F border -F gay      'TE AMO SELI:3'
+toilet -f smmono12 -f pagga -F border -F gay      'TE AMO :3'
 cowsay -f eyes Sm330WaBot | lolcat
-toilet -f big ' Sam Y Perry' -F gay | lolcat
+toilet -f big ' Moder Warfer' -F gay | lolcat
 neofetch
-play Samu.wav 
+play Moder.wav 
