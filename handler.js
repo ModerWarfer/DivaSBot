@@ -319,8 +319,8 @@ module.exports = {
               pp = await this.getProfilePicture(user)
             } catch (e) {
             } finally {
-              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', this.getName(jid)) :
-                (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', '@' + user.split('@')[0])
+              text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Benvenido a DivaPerlas, @user!').replace('@subject', this.getName(jid)) :
+                (chat.sBye || this.bye || conn.bye || 'Se fue una DivaPerlita, @user! por fin')).replace('@user', '@' + user.split('@')[0])
               this.sendFile(jid, pp, 'pp.jpg', text, null, false, {
                 contextInfo: {
                   mentionedJid: [user]
@@ -331,9 +331,9 @@ module.exports = {
         }
         break
       case 'promote':
-        text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
+        text = (chat.sPromote || this.spromote || conn.spromote || '@user ```ahora es PerlaMaster```')
       case 'demote':
-        if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
+        if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```ahora es Perlita```')
         text = text.replace('@user', '@' + participants[0].split('@')[0])
         if (chat.detect) this.sendMessage(jid, text, MessageType.extendedText, {
           contextInfo: {
@@ -368,9 +368,9 @@ global.dfail = (type, m, conn) => {
     premium: 'Este comando es solo para miembros _*Premium*_ !',
     group: 'Este comando solo se puede usar en grupos!',
     private: 'Este comando solo se puede usar en chats privados!',
-    admin: 'Este comando es solo para el *Admin*!',
-    botAdmin: 'Haga que el bot sea un *Admin* para usar este comando!',
-    unreg: 'Regístrese para utilizar esta función, escribiendo:\n\n*#reg nombre.edad*\n\nEjemplo: *#reg Samu.17*'
+    admin: 'Este comando es solo para el *PerlasMasters*!',
+    botAdmin: 'Haga que el bot sea una *PerlaMaster* para usar este comando!',
+    unreg: 'Regístrese para utilizar esta función, escribiendo:\n\n*#reg nombre.edad*\n\nEjemplo: *#reg Agustin.17*'
   }[type]
   if (msg) return m.reply(msg)
 }
